@@ -1,0 +1,37 @@
+# Dataset and large data files
+MIR-WM811K/
+data/
+*.pkl
+*.pickle
+*.zip
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Saved models
+*.pt
+*.pth
+checkpoints/
+
+# Python environments and cache
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+
+# macOS
+.DS_Store
+
+# Reference documents and presentations
+*.pdf
+*.pptx
