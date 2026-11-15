@@ -2,8 +2,13 @@
 
 An ongoing project investigating semiconductor wafer defect classification using the WM811K dataset and a PyTorch CNN baseline.
 
+## Dataset
+
+This project uses `WM811K.pkl` from MIR Lab's public MIR-WM811K release. The dataset contains 811,457 wafer maps from 46,293 production lots. Each map is a 2D grid that records the locations of passing and failing dies. The original study introduced the dataset to evaluate wafer failure pattern recognition and retrieval of similar maps. [Wu, Jang, and Chen (2015)](https://doi.org/10.1109/TSM.2014.2364237)
+
 ## Current Progress
 
+- Completed Day 1 wafer-map inspection: checked the first five maps' dimensions and data types, counted passing dies, failing dies, and cells outside the wafer, and plotted the failing die locations on the first wafer.
 - Loaded and inspected 811,457 wafer maps.
 - Cleaned failure-type labels and retained 172,950 labeled samples across nine categories.
 - Examined wafer-map dimensions, class distributions, and representative defect patterns.
@@ -16,17 +21,11 @@ An ongoing project investigating semiconductor wafer defect classification using
 
 ## Classification Categories
 
-Eight defect categories plus the `none` category:
+WM-811K has eight labeled failure patterns and a `none` category. A wafer labeled `none` can still contain failing dies. Records without a pattern label are unlabeled.
 
-- none
-- Center
-- Donut
-- Edge-Loc
-- Edge-Ring
-- Loc
-- Near-full
-- Random
-- Scratch
+![Eight WM-811K wafer maps labeled Center, Donut, Edge-Loc, Edge-Ring, Loc, Near-full, Random, and Scratch.](figures/wafer_failure_patterns.png)
+
+*One example per pattern from the MIR-WM811K Python dataset. Each map is shown as recorded in the dataset.*
 
 ## Experiment A: Balanced CNN Baseline
 
@@ -64,7 +63,7 @@ The saved checkpoint was evaluated on 16,714 wafers from 1,077 held-out lots.
 - Test accuracy: 75.34%
 - Test macro-F1: 0.5188
 
-The test report includes per-class precision, recall, F1, and support. The test confusion matrix is normalized by true class. To reproduce the test evaluation, follow the setup instructions in the final notebook section.
+The test report includes per-class precision, recall, F1, and support. The test confusion matrix is normalized by true class. To reproduce the test evaluation, follow the setup instructions under **Evaluate the saved 200-epoch model on the test set** in the notebook.
 
 ### Earlier Confusion Matrix
 
@@ -75,7 +74,7 @@ It does not represent the 200-epoch model.
 
 ## Experiment B: Capped Training Sample
 
-The notebook's final section samples up to 2,000 training wafers per class
+The notebook section **Experiment B — Up to 2,000 training wafers per class** samples up to 2,000 training wafers per class
 and retains all training wafers from classes below that cap. It reuses the
 lot split, preprocessing, CNN architecture, and Adam settings from Experiment A.
 
@@ -239,18 +238,16 @@ The 117-wafer held-out pilot was not used for this comparison.
 
 ## Running the Notebook
 
-1. Obtain the WM811K dataset separately.
-2. Update the local dataset path in the dataset-loading cell.
-3. Install the required libraries.
-4. Run the notebook cells in order.
+### Day 1 wafer-map inspection
 
-Required libraries:
+1. Obtain the MIR-WM811K dataset and locate its Python file, `WM811K.pkl`.
+2. Open [`wm811k_exploration.ipynb`](wm811k_exploration.ipynb) in Jupyter or VS Code and update the path in `pd.read_pickle(...)`.
+3. Install pandas, NumPy, and Matplotlib in the notebook's Python environment.
+4. Run from the top through the loop that prints the dimensions, data type, and counts for rows 0–4.
 
-- pandas
-- numpy
-- matplotlib
-- scikit-learn
-- torch
+### Classification experiments
+
+Install scikit-learn and PyTorch in addition to the Day 1 libraries. Follow the setup and checkpoint instructions under the notebook heading for the experiment you want to reproduce.
 
 The notebook uses Apple MPS acceleration when available and otherwise
 falls back to the CPU. Runtime and results may vary by environment.
