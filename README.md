@@ -8,7 +8,8 @@ This project uses `WM811K.pkl` from MIR Lab's public MIR-WM811K release. The dat
 
 ## Current Progress
 
-- Completed Day 1 wafer-map inspection: checked the first five maps' dimensions and data types, counted passing dies, failing dies, and cells outside the wafer, and plotted the failing die locations on the first wafer.
+- Inspected the first five wafer maps and plotted the failing die locations on the first wafer.
+- Calculated die-level pass ratios for the first 100 wafer maps across four production lots. Checked for missing and duplicate wafer identifiers and exported the results to [`wafer_summary.csv`](wafer_summary.csv).
 - Loaded and inspected 811,457 wafer maps.
 - Cleaned failure-type labels and retained 172,950 labeled samples across nine categories.
 - Examined wafer-map dimensions, class distributions, and representative defect patterns.
@@ -238,16 +239,16 @@ The 117-wafer held-out pilot was not used for this comparison.
 
 ## Running the Notebook
 
-### Day 1 wafer-map inspection
+### Wafer-map inspection and summary
 
 1. Obtain the MIR-WM811K dataset and locate its Python file, `WM811K.pkl`.
 2. Open [`wm811k_exploration.ipynb`](wm811k_exploration.ipynb) in Jupyter or VS Code and update the path in `pd.read_pickle(...)`.
 3. Install pandas, NumPy, and Matplotlib in the notebook's Python environment.
-4. Run from the top through the loop that prints the dimensions, data type, and counts for rows 0–4.
+4. Run from the top through the cell labeled `Export the wafer summary to CSV`. It writes `wafer_summary.csv` and reads it back to confirm that it has 100 rows and six columns.
 
 ### Classification experiments
 
-Install scikit-learn and PyTorch in addition to the Day 1 libraries. Follow the setup and checkpoint instructions under the notebook heading for the experiment you want to reproduce.
+Install scikit-learn and PyTorch in addition to the libraries above. Follow the setup and checkpoint instructions under the notebook heading for the experiment you want to reproduce.
 
 The notebook uses Apple MPS acceleration when available and otherwise
 falls back to the CPU. Runtime and results may vary by environment.
