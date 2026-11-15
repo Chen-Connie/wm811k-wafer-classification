@@ -259,3 +259,8 @@ environments, and secrets out of version control.
 
 Small experiment outputs, such as training-history JSON files and
 evaluation figures, can be included to document results.
+
+## References
+
+1. M.-J. Wu, J.-S. R. Jang, and J.-L. Chen, “Wafer Map Failure Pattern Recognition and Similarity Ranking for Large-Scale Data Sets,” *IEEE Transactions on Semiconductor Manufacturing*, vol. 28, no. 1, pp. 1–12, Feb. 2015. [doi:10.1109/TSM.2014.2364237](https://doi.org/10.1109/TSM.2014.2364237)
+2. MIR Lab, [MIR-WM811K](http://mirlab.org/dataSet/public/), public dataset for wafer map failure pattern recognition. This project uses the Python version, `WM811K.pkl`.
