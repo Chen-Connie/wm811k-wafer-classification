@@ -263,5 +263,5 @@ evaluation figures, can be included to document results.
 ## References
 
 1. M.-J. Wu, J.-S. R. Jang, and J.-L. Chen, “Wafer Map Failure Pattern Recognition and Similarity Ranking for Large-Scale Data Sets,” *IEEE Transactions on Semiconductor Manufacturing*, vol. 28, no. 1, pp. 1–12, Feb. 2015. [doi:10.1109/TSM.2014.2364237](https://doi.org/10.1109/TSM.2014.2364237)
-2. MIR Lab, *MIR-WM811K*, public dataset for wafer map failure pattern recognition. This project uses the Python release, `WM811K.pkl`. The original MIR Lab directory currently returns HTTP 404. See [MathWorks' dataset description](https://www.mathworks.com/help/deeplearning/ug/data-sets-for-deep-learning.html) for dataset details.
-3. [WM-811K on Kaggle](https://www.kaggle.com/datasets/qingyi/wm811k-wafer-map), an alternative distribution. Its file and label formats can differ from the Python release used in this notebook.
+2. MIR Lab, *MIR-WM811K*, the original dataset release. This project uses the Python file `WM811K.pkl`. The original MIR Lab directory currently returns HTTP 404.
+3. MathWorks, [MIR WM-811K dataset description](https://www.mathworks.com/help/deeplearning/ug/data-sets-for-deep-learning.html), a supplementary reference for the wafer maps, die encoding, and pattern labels.
