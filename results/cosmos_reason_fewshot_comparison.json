@@ -1,0 +1,457 @@
+{
+  "split": "class-balanced validation pilot",
+  "samples": 18,
+  "lots": 18,
+  "class_names": [
+    "none",
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Near-full",
+    "Random",
+    "Scratch",
+    "invalid"
+  ],
+  "settings": {
+    "model": "mlx-community/Cosmos-Reason1-7B-4bit",
+    "revision": "9921dabe46e862b71f299cc6948fa78ae8a0261e",
+    "mlx_vlm_version": "0.7.12",
+    "prompt": "Classify this wafer map. Black is outside the wafer, gray is a passing die, and red is a failed die.\nChoose the primary pattern of the red dies from exactly one of these labels:\nnone: no distinctive defect pattern\nCenter: cluster near the center\nDonut: ring around the center, away from the outer edge\nEdge-Loc: localized cluster at the edge\nEdge-Ring: ring along most of the outer edge\nLoc: localized cluster away from the edge\nNear-full: defects across nearly the entire wafer\nRandom: randomly scattered defects\nScratch: defects aligned along a thin straight or curved path\nReturn only the exact label, with no explanation.",
+    "max_tokens": 64,
+    "temperature": 0
+  },
+  "training_examples": [
+    {
+      "wafer_id": 212175,
+      "lot": "lot13514",
+      "actual": "Scratch",
+      "image": "212175.png"
+    },
+    {
+      "wafer_id": 268878,
+      "lot": "lot16605",
+      "actual": "Edge-Ring",
+      "image": "268878.png"
+    },
+    {
+      "wafer_id": 279757,
+      "lot": "lot17168",
+      "actual": "Donut",
+      "image": "279757.png"
+    },
+    {
+      "wafer_id": 337751,
+      "lot": "lot20327",
+      "actual": "Center",
+      "image": "337751.png"
+    },
+    {
+      "wafer_id": 363802,
+      "lot": "lot21777",
+      "actual": "Random",
+      "image": "363802.png"
+    },
+    {
+      "wafer_id": 757853,
+      "lot": "lot45361",
+      "actual": "Edge-Loc",
+      "image": "757853.png"
+    },
+    {
+      "wafer_id": 763207,
+      "lot": "lot45578",
+      "actual": "Near-full",
+      "image": "763207.png"
+    },
+    {
+      "wafer_id": 799160,
+      "lot": "lot47041",
+      "actual": "none",
+      "image": "799160.png"
+    },
+    {
+      "wafer_id": 809154,
+      "lot": "lot47446",
+      "actual": "Loc",
+      "image": "809154.png"
+    }
+  ],
+  "zero_shot": {
+    "accuracy": 0.16666666666666666,
+    "macro_f1": 0.0606060606060606,
+    "prediction_counts": {
+      "Near-full": 9,
+      "Random": 9
+    },
+    "none_false_alarms": 2,
+    "scratch_correct": 0,
+    "per_class": {
+      "none": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Center": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Donut": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Edge-Loc": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Edge-Ring": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Loc": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Near-full": {
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1-score": 0.36363636363636365,
+        "support": 2.0
+      },
+      "Random": {
+        "precision": 0.1111111111111111,
+        "recall": 0.5,
+        "f1-score": 0.18181818181818182,
+        "support": 2.0
+      },
+      "Scratch": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      }
+    },
+    "confusion_matrix_counts": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "few_shot": {
+    "accuracy": 0.1111111111111111,
+    "macro_f1": 0.04040404040404041,
+    "prediction_counts": {
+      "Random": 9,
+      "Near-full": 9
+    },
+    "none_false_alarms": 2,
+    "scratch_correct": 0,
+    "per_class": {
+      "none": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Center": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Donut": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Edge-Loc": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Edge-Ring": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Loc": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Near-full": {
+        "precision": 0.2222222222222222,
+        "recall": 1.0,
+        "f1-score": 0.36363636363636365,
+        "support": 2.0
+      },
+      "Random": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      },
+      "Scratch": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2.0
+      }
+    },
+    "confusion_matrix_counts": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+}

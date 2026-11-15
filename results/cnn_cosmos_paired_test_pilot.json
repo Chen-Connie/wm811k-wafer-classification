@@ -1,0 +1,406 @@
+{
+  "split": "held-out test lots, class-balanced pilot",
+  "samples": 117,
+  "lots": 102,
+  "samples_by_class": {
+    "none": 13,
+    "Center": 13,
+    "Donut": 13,
+    "Edge-Loc": 13,
+    "Edge-Ring": 13,
+    "Loc": 13,
+    "Near-full": 13,
+    "Random": 13,
+    "Scratch": 13
+  },
+  "confusion_matrix_labels": [
+    "none",
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Near-full",
+    "Random",
+    "Scratch",
+    "invalid"
+  ],
+  "cosmos_settings": {
+    "model": "mlx-community/Cosmos-Reason1-7B-4bit",
+    "revision": "9921dabe46e862b71f299cc6948fa78ae8a0261e",
+    "mlx_vlm_version": "0.7.12",
+    "prompt": "Classify this wafer map. Black is outside the wafer, gray is a passing die, and red is a failed die.\nChoose the primary pattern of the red dies from exactly one of these labels:\nnone: no distinctive defect pattern\nCenter: cluster near the center\nDonut: ring around the center, away from the outer edge\nEdge-Loc: localized cluster at the edge\nEdge-Ring: ring along most of the outer edge\nLoc: localized cluster away from the edge\nNear-full: defects across nearly the entire wafer\nRandom: randomly scattered defects\nScratch: defects aligned along a thin straight or curved path\nReturn only the exact label, with no explanation.",
+    "max_tokens": 64,
+    "temperature": 0
+  },
+  "cnn": {
+    "accuracy": 0.5641025641025641,
+    "macro_f1": 0.544143647873033,
+    "none_false_alarms": 4,
+    "none_samples": 13,
+    "invalid_outputs": 0,
+    "per_class": {
+      "none": {
+        "precision": 0.2727272727272727,
+        "recall": 0.6923076923076923,
+        "f1-score": 0.391304347826087,
+        "support": 13.0
+      },
+      "Center": {
+        "precision": 0.3684210526315789,
+        "recall": 0.5384615384615384,
+        "f1-score": 0.4375,
+        "support": 13.0
+      },
+      "Donut": {
+        "precision": 0.7142857142857143,
+        "recall": 0.38461538461538464,
+        "f1-score": 0.5,
+        "support": 13.0
+      },
+      "Edge-Loc": {
+        "precision": 0.5555555555555556,
+        "recall": 0.38461538461538464,
+        "f1-score": 0.45454545454545453,
+        "support": 13.0
+      },
+      "Edge-Ring": {
+        "precision": 0.8125,
+        "recall": 1.0,
+        "f1-score": 0.896551724137931,
+        "support": 13.0
+      },
+      "Loc": {
+        "precision": 0.4,
+        "recall": 0.3076923076923077,
+        "f1-score": 0.34782608695652173,
+        "support": 13.0
+      },
+      "Near-full": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 13.0
+      },
+      "Random": {
+        "precision": 1.0,
+        "recall": 0.7692307692307693,
+        "f1-score": 0.8695652173913043,
+        "support": 13.0
+      },
+      "Scratch": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      }
+    },
+    "confusion_matrix_counts": [
+      [
+        9,
+        0,
+        0,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        7,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        5,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        0,
+        5,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        3,
+        0,
+        1,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        10,
+        0,
+        0
+      ],
+      [
+        9,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "cosmos": {
+    "accuracy": 0.1282051282051282,
+    "macro_f1": 0.08357699805068225,
+    "none_false_alarms": 13,
+    "none_samples": 13,
+    "invalid_outputs": 0,
+    "per_class": {
+      "none": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "Center": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "Donut": {
+        "precision": 1.0,
+        "recall": 0.23076923076923078,
+        "f1-score": 0.375,
+        "support": 13.0
+      },
+      "Edge-Loc": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "Edge-Ring": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "Loc": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      },
+      "Near-full": {
+        "precision": 0.1590909090909091,
+        "recall": 0.5384615384615384,
+        "f1-score": 0.24561403508771928,
+        "support": 13.0
+      },
+      "Random": {
+        "precision": 0.07936507936507936,
+        "recall": 0.38461538461538464,
+        "f1-score": 0.13157894736842105,
+        "support": 13.0
+      },
+      "Scratch": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 13.0
+      }
+    },
+    "confusion_matrix_counts": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        7,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        9,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        11,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        11,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+}

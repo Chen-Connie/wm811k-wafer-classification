@@ -1,0 +1,1065 @@
+{
+  "settings": {
+    "model": "mlx-community/Cosmos-Reason1-7B-4bit",
+    "revision": "9921dabe46e862b71f299cc6948fa78ae8a0261e",
+    "mlx_vlm_version": "0.7.12",
+    "prompt": "Classify this wafer map. Black is outside the wafer, gray is a passing die, and red is a failed die.\nChoose the primary pattern of the red dies from exactly one of these labels:\nnone: no distinctive defect pattern\nCenter: cluster near the center\nDonut: ring around the center, away from the outer edge\nEdge-Loc: localized cluster at the edge\nEdge-Ring: ring along most of the outer edge\nLoc: localized cluster away from the edge\nNear-full: defects across nearly the entire wafer\nRandom: randomly scattered defects\nScratch: defects aligned along a thin straight or curved path\nReturn only the exact label, with no explanation.",
+    "max_tokens": 64,
+    "temperature": 0
+  },
+  "predictions": [
+    {
+      "wafer_id": 6196,
+      "lot": "lot249",
+      "actual": "none",
+      "image": "6196.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 5.701035290956497
+    },
+    {
+      "wafer_id": 6340,
+      "lot": "lot255",
+      "actual": "Near-full",
+      "image": "6340.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.407826583832502
+    },
+    {
+      "wafer_id": 7449,
+      "lot": "lot1290",
+      "actual": "Scratch",
+      "image": "7449.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 5.206453333143145
+    },
+    {
+      "wafer_id": 7939,
+      "lot": "lot1419",
+      "actual": "Donut",
+      "image": "7939.png",
+      "vlm_prediction": "Donut",
+      "raw_response": "Donut",
+      "seconds": 5.21942308312282
+    },
+    {
+      "wafer_id": 7947,
+      "lot": "lot1419",
+      "actual": "Donut",
+      "image": "7947.png",
+      "vlm_prediction": "Donut",
+      "raw_response": "Donut",
+      "seconds": 4.832131207920611
+    },
+    {
+      "wafer_id": 7948,
+      "lot": "lot1419",
+      "actual": "Donut",
+      "image": "7948.png",
+      "vlm_prediction": "Donut",
+      "raw_response": "Donut",
+      "seconds": 4.396280708257109
+    },
+    {
+      "wafer_id": 21801,
+      "lot": "lot2535",
+      "actual": "Random",
+      "image": "21801.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.856212291866541
+    },
+    {
+      "wafer_id": 44130,
+      "lot": "lot3822",
+      "actual": "Scratch",
+      "image": "44130.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.560774541925639
+    },
+    {
+      "wafer_id": 68884,
+      "lot": "lot5178",
+      "actual": "Edge-Loc",
+      "image": "68884.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.7418945832177997
+    },
+    {
+      "wafer_id": 124697,
+      "lot": "lot8269",
+      "actual": "Random",
+      "image": "124697.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.542602249886841
+    },
+    {
+      "wafer_id": 165646,
+      "lot": "lot10591",
+      "actual": "Edge-Loc",
+      "image": "165646.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.6192453331314027
+    },
+    {
+      "wafer_id": 180176,
+      "lot": "lot11513",
+      "actual": "Center",
+      "image": "180176.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.761385042220354
+    },
+    {
+      "wafer_id": 187044,
+      "lot": "lot11874",
+      "actual": "Center",
+      "image": "187044.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.5968692083843052
+    },
+    {
+      "wafer_id": 187564,
+      "lot": "lot11910",
+      "actual": "Center",
+      "image": "187564.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.7796829170547426
+    },
+    {
+      "wafer_id": 194510,
+      "lot": "lot12352",
+      "actual": "Scratch",
+      "image": "194510.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.7037202082574368
+    },
+    {
+      "wafer_id": 199571,
+      "lot": "lot12744",
+      "actual": "Edge-Ring",
+      "image": "199571.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.5658889156766236
+    },
+    {
+      "wafer_id": 202442,
+      "lot": "lot12909",
+      "actual": "Edge-Ring",
+      "image": "202442.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.654479999560863
+    },
+    {
+      "wafer_id": 221292,
+      "lot": "lot13965",
+      "actual": "Edge-Ring",
+      "image": "221292.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.207415709272027
+    },
+    {
+      "wafer_id": 228226,
+      "lot": "lot14324",
+      "actual": "Edge-Ring",
+      "image": "228226.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.045964041724801
+    },
+    {
+      "wafer_id": 247675,
+      "lot": "lot15458",
+      "actual": "Near-full",
+      "image": "247675.png",
+      "vlm_prediction": "Edge-Ring",
+      "raw_response": "Edge-Ring",
+      "seconds": 6.341163500212133
+    },
+    {
+      "wafer_id": 247738,
+      "lot": "lot15460",
+      "actual": "Random",
+      "image": "247738.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 5.389485291205347
+    },
+    {
+      "wafer_id": 251129,
+      "lot": "lot15598",
+      "actual": "none",
+      "image": "251129.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 5.189037791918963
+    },
+    {
+      "wafer_id": 251646,
+      "lot": "lot15619",
+      "actual": "Near-full",
+      "image": "251646.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.054807541426271
+    },
+    {
+      "wafer_id": 251953,
+      "lot": "lot15631",
+      "actual": "Random",
+      "image": "251953.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.268286416772753
+    },
+    {
+      "wafer_id": 255140,
+      "lot": "lot15795",
+      "actual": "Center",
+      "image": "255140.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.770878458861262
+    },
+    {
+      "wafer_id": 278963,
+      "lot": "lot17127",
+      "actual": "Loc",
+      "image": "278963.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.440343666356057
+    },
+    {
+      "wafer_id": 278983,
+      "lot": "lot17127",
+      "actual": "Donut",
+      "image": "278983.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.438961334060878
+    },
+    {
+      "wafer_id": 279051,
+      "lot": "lot17130",
+      "actual": "Donut",
+      "image": "279051.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.849691915791482
+    },
+    {
+      "wafer_id": 279396,
+      "lot": "lot17150",
+      "actual": "Donut",
+      "image": "279396.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.9087880412116647
+    },
+    {
+      "wafer_id": 279397,
+      "lot": "lot17150",
+      "actual": "Donut",
+      "image": "279397.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.452206499874592
+    },
+    {
+      "wafer_id": 279897,
+      "lot": "lot17176",
+      "actual": "Donut",
+      "image": "279897.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.103471874725074
+    },
+    {
+      "wafer_id": 279938,
+      "lot": "lot17178",
+      "actual": "Donut",
+      "image": "279938.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.796893458813429
+    },
+    {
+      "wafer_id": 279949,
+      "lot": "lot17178",
+      "actual": "Donut",
+      "image": "279949.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.510219458024949
+    },
+    {
+      "wafer_id": 281936,
+      "lot": "lot17263",
+      "actual": "Edge-Ring",
+      "image": "281936.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 5.266282291151583
+    },
+    {
+      "wafer_id": 348197,
+      "lot": "lot20802",
+      "actual": "Scratch",
+      "image": "348197.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.959976499900222
+    },
+    {
+      "wafer_id": 350355,
+      "lot": "lot20904",
+      "actual": "Edge-Ring",
+      "image": "350355.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.714337958022952
+    },
+    {
+      "wafer_id": 359890,
+      "lot": "lot21559",
+      "actual": "Edge-Ring",
+      "image": "359890.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.7081053340807557
+    },
+    {
+      "wafer_id": 359986,
+      "lot": "lot21563",
+      "actual": "Edge-Ring",
+      "image": "359986.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.9266546252183616
+    },
+    {
+      "wafer_id": 359998,
+      "lot": "lot21563",
+      "actual": "Edge-Ring",
+      "image": "359998.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.7673704577609897
+    },
+    {
+      "wafer_id": 360003,
+      "lot": "lot21563",
+      "actual": "Edge-Ring",
+      "image": "360003.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.583139458205551
+    },
+    {
+      "wafer_id": 360902,
+      "lot": "lot21611",
+      "actual": "Center",
+      "image": "360902.png",
+      "vlm_prediction": "Edge-Ring",
+      "raw_response": "Edge-Ring",
+      "seconds": 4.071646792348474
+    },
+    {
+      "wafer_id": 363100,
+      "lot": "lot21732",
+      "actual": "Loc",
+      "image": "363100.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.519725166726857
+    },
+    {
+      "wafer_id": 376853,
+      "lot": "lot22463",
+      "actual": "Loc",
+      "image": "376853.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 5.520026416052133
+    },
+    {
+      "wafer_id": 385297,
+      "lot": "lot23104",
+      "actual": "Edge-Ring",
+      "image": "385297.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.826000500004739
+    },
+    {
+      "wafer_id": 391520,
+      "lot": "lot23512",
+      "actual": "Donut",
+      "image": "391520.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.060181833803654
+    },
+    {
+      "wafer_id": 472835,
+      "lot": "lot29115",
+      "actual": "Scratch",
+      "image": "472835.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.498838750179857
+    },
+    {
+      "wafer_id": 475168,
+      "lot": "lot29309",
+      "actual": "Scratch",
+      "image": "475168.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.9053860418498516
+    },
+    {
+      "wafer_id": 493526,
+      "lot": "lot30526",
+      "actual": "Scratch",
+      "image": "493526.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.6955639999359846
+    },
+    {
+      "wafer_id": 525144,
+      "lot": "lot32852",
+      "actual": "Center",
+      "image": "525144.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.791414250154048
+    },
+    {
+      "wafer_id": 526611,
+      "lot": "lot32947",
+      "actual": "Center",
+      "image": "526611.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.977555084042251
+    },
+    {
+      "wafer_id": 574485,
+      "lot": "lot35953",
+      "actual": "Center",
+      "image": "574485.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.6784856668673456
+    },
+    {
+      "wafer_id": 587406,
+      "lot": "lot36642",
+      "actual": "Center",
+      "image": "587406.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.8425600831396878
+    },
+    {
+      "wafer_id": 642355,
+      "lot": "lot40436",
+      "actual": "Loc",
+      "image": "642355.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.8706882502883673
+    },
+    {
+      "wafer_id": 645257,
+      "lot": "lot40553",
+      "actual": "Random",
+      "image": "645257.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.7174675418064
+    },
+    {
+      "wafer_id": 645267,
+      "lot": "lot40553",
+      "actual": "Random",
+      "image": "645267.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.8566682916134596
+    },
+    {
+      "wafer_id": 652803,
+      "lot": "lot40865",
+      "actual": "Scratch",
+      "image": "652803.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.648867041338235
+    },
+    {
+      "wafer_id": 655156,
+      "lot": "lot40960",
+      "actual": "Near-full",
+      "image": "655156.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.6907813330180943
+    },
+    {
+      "wafer_id": 656747,
+      "lot": "lot41024",
+      "actual": "Loc",
+      "image": "656747.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.7517254576087
+    },
+    {
+      "wafer_id": 657462,
+      "lot": "lot41053",
+      "actual": "Center",
+      "image": "657462.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.618045000359416
+    },
+    {
+      "wafer_id": 658639,
+      "lot": "lot41101",
+      "actual": "Edge-Loc",
+      "image": "658639.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.4205486667342484
+    },
+    {
+      "wafer_id": 679366,
+      "lot": "lot42184",
+      "actual": "Loc",
+      "image": "679366.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 5.734938709065318
+    },
+    {
+      "wafer_id": 679380,
+      "lot": "lot42185",
+      "actual": "Donut",
+      "image": "679380.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 5.695825875271112
+    },
+    {
+      "wafer_id": 680611,
+      "lot": "lot42234",
+      "actual": "none",
+      "image": "680611.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 5.607977708801627
+    },
+    {
+      "wafer_id": 686466,
+      "lot": "lot42473",
+      "actual": "Center",
+      "image": "686466.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.10727820917964
+    },
+    {
+      "wafer_id": 689808,
+      "lot": "lot42612",
+      "actual": "none",
+      "image": "689808.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 5.64001595787704
+    },
+    {
+      "wafer_id": 692173,
+      "lot": "lot42707",
+      "actual": "Center",
+      "image": "692173.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.914649209007621
+    },
+    {
+      "wafer_id": 692179,
+      "lot": "lot42707",
+      "actual": "Loc",
+      "image": "692179.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.8293355414643884
+    },
+    {
+      "wafer_id": 692688,
+      "lot": "lot42728",
+      "actual": "Loc",
+      "image": "692688.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.7552822497673333
+    },
+    {
+      "wafer_id": 696218,
+      "lot": "lot42871",
+      "actual": "Near-full",
+      "image": "696218.png",
+      "vlm_prediction": "Edge-Ring",
+      "raw_response": "Edge-Ring",
+      "seconds": 3.9162810421548784
+    },
+    {
+      "wafer_id": 696564,
+      "lot": "lot42885",
+      "actual": "Near-full",
+      "image": "696564.png",
+      "vlm_prediction": "Edge-Ring",
+      "raw_response": "Edge-Ring",
+      "seconds": 3.809297624975443
+    },
+    {
+      "wafer_id": 697603,
+      "lot": "lot42927",
+      "actual": "Near-full",
+      "image": "697603.png",
+      "vlm_prediction": "Edge-Ring",
+      "raw_response": "Edge-Ring",
+      "seconds": 3.7036100002005696
+    },
+    {
+      "wafer_id": 698170,
+      "lot": "lot42950",
+      "actual": "Near-full",
+      "image": "698170.png",
+      "vlm_prediction": "Edge-Ring",
+      "raw_response": "Edge-Ring",
+      "seconds": 4.622712499927729
+    },
+    {
+      "wafer_id": 698366,
+      "lot": "lot42957",
+      "actual": "Near-full",
+      "image": "698366.png",
+      "vlm_prediction": "Edge-Ring",
+      "raw_response": "Edge-Ring",
+      "seconds": 3.7589156250469387
+    },
+    {
+      "wafer_id": 698466,
+      "lot": "lot42961",
+      "actual": "none",
+      "image": "698466.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.605014834087342
+    },
+    {
+      "wafer_id": 706495,
+      "lot": "lot43285",
+      "actual": "none",
+      "image": "706495.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.55697958311066
+    },
+    {
+      "wafer_id": 712287,
+      "lot": "lot43519",
+      "actual": "Loc",
+      "image": "712287.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.750915165990591
+    },
+    {
+      "wafer_id": 716748,
+      "lot": "lot43698",
+      "actual": "none",
+      "image": "716748.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.8860224173404276
+    },
+    {
+      "wafer_id": 720151,
+      "lot": "lot43836",
+      "actual": "Scratch",
+      "image": "720151.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.4763312498107553
+    },
+    {
+      "wafer_id": 720929,
+      "lot": "lot43867",
+      "actual": "Random",
+      "image": "720929.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.8834061669185758
+    },
+    {
+      "wafer_id": 720931,
+      "lot": "lot43867",
+      "actual": "Near-full",
+      "image": "720931.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.928841291926801
+    },
+    {
+      "wafer_id": 720939,
+      "lot": "lot43867",
+      "actual": "Random",
+      "image": "720939.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.693826917093247
+    },
+    {
+      "wafer_id": 723348,
+      "lot": "lot43964",
+      "actual": "Random",
+      "image": "723348.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.8493952499702573
+    },
+    {
+      "wafer_id": 727032,
+      "lot": "lot44112",
+      "actual": "Loc",
+      "image": "727032.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.6333107501268387
+    },
+    {
+      "wafer_id": 728430,
+      "lot": "lot44170",
+      "actual": "Edge-Ring",
+      "image": "728430.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.727872916031629
+    },
+    {
+      "wafer_id": 728435,
+      "lot": "lot44170",
+      "actual": "Edge-Ring",
+      "image": "728435.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.8903997503221035
+    },
+    {
+      "wafer_id": 728522,
+      "lot": "lot44175",
+      "actual": "Near-full",
+      "image": "728522.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.672969125211239
+    },
+    {
+      "wafer_id": 728622,
+      "lot": "lot44179",
+      "actual": "Near-full",
+      "image": "728622.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.023491207975894
+    },
+    {
+      "wafer_id": 731971,
+      "lot": "lot44315",
+      "actual": "Random",
+      "image": "731971.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.972175834234804
+    },
+    {
+      "wafer_id": 734427,
+      "lot": "lot44415",
+      "actual": "Edge-Loc",
+      "image": "734427.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.5960633330978453
+    },
+    {
+      "wafer_id": 738205,
+      "lot": "lot44570",
+      "actual": "Donut",
+      "image": "738205.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.859768083319068
+    },
+    {
+      "wafer_id": 749022,
+      "lot": "lot45005",
+      "actual": "none",
+      "image": "749022.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.021776916924864
+    },
+    {
+      "wafer_id": 750392,
+      "lot": "lot45060",
+      "actual": "none",
+      "image": "750392.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.71267508296296
+    },
+    {
+      "wafer_id": 752345,
+      "lot": "lot45139",
+      "actual": "Near-full",
+      "image": "752345.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 4.333070249762386
+    },
+    {
+      "wafer_id": 756614,
+      "lot": "lot45311",
+      "actual": "Edge-Loc",
+      "image": "756614.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.079185375012457
+    },
+    {
+      "wafer_id": 756619,
+      "lot": "lot45311",
+      "actual": "Edge-Loc",
+      "image": "756619.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.767228165641427
+    },
+    {
+      "wafer_id": 756639,
+      "lot": "lot45312",
+      "actual": "Edge-Loc",
+      "image": "756639.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.6952826669439673
+    },
+    {
+      "wafer_id": 758288,
+      "lot": "lot45379",
+      "actual": "Edge-Loc",
+      "image": "758288.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.8189958329312503
+    },
+    {
+      "wafer_id": 763808,
+      "lot": "lot45603",
+      "actual": "Edge-Loc",
+      "image": "763808.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.8667046669870615
+    },
+    {
+      "wafer_id": 766669,
+      "lot": "lot45719",
+      "actual": "Loc",
+      "image": "766669.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.5705892499536276
+    },
+    {
+      "wafer_id": 768504,
+      "lot": "lot45794",
+      "actual": "Edge-Loc",
+      "image": "768504.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.5776845421642065
+    },
+    {
+      "wafer_id": 768798,
+      "lot": "lot45806",
+      "actual": "Edge-Loc",
+      "image": "768798.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.5735273747704923
+    },
+    {
+      "wafer_id": 769819,
+      "lot": "lot45847",
+      "actual": "Loc",
+      "image": "769819.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.5893076662905514
+    },
+    {
+      "wafer_id": 772987,
+      "lot": "lot45976",
+      "actual": "Scratch",
+      "image": "772987.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.7499227500520647
+    },
+    {
+      "wafer_id": 773196,
+      "lot": "lot45985",
+      "actual": "Random",
+      "image": "773196.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.660983541049063
+    },
+    {
+      "wafer_id": 773209,
+      "lot": "lot45985",
+      "actual": "Random",
+      "image": "773209.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.6057329173199832
+    },
+    {
+      "wafer_id": 773216,
+      "lot": "lot45985",
+      "actual": "Random",
+      "image": "773216.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.7119012093171477
+    },
+    {
+      "wafer_id": 774874,
+      "lot": "lot46055",
+      "actual": "none",
+      "image": "774874.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.021527584176511
+    },
+    {
+      "wafer_id": 781691,
+      "lot": "lot46333",
+      "actual": "none",
+      "image": "781691.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 4.191554999910295
+    },
+    {
+      "wafer_id": 788108,
+      "lot": "lot46593",
+      "actual": "Scratch",
+      "image": "788108.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.677744333166629
+    },
+    {
+      "wafer_id": 788934,
+      "lot": "lot46626",
+      "actual": "Center",
+      "image": "788934.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.6300952499732375
+    },
+    {
+      "wafer_id": 790607,
+      "lot": "lot46695",
+      "actual": "none",
+      "image": "790607.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.9363700412213802
+    },
+    {
+      "wafer_id": 791175,
+      "lot": "lot46717",
+      "actual": "none",
+      "image": "791175.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.786015334073454
+    },
+    {
+      "wafer_id": 795261,
+      "lot": "lot46884",
+      "actual": "Edge-Loc",
+      "image": "795261.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.712751416955143
+    },
+    {
+      "wafer_id": 800988,
+      "lot": "lot47115",
+      "actual": "Loc",
+      "image": "800988.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.6640863339416683
+    },
+    {
+      "wafer_id": 801455,
+      "lot": "lot47134",
+      "actual": "Scratch",
+      "image": "801455.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.5283080409280956
+    },
+    {
+      "wafer_id": 804978,
+      "lot": "lot47278",
+      "actual": "Scratch",
+      "image": "804978.png",
+      "vlm_prediction": "Random",
+      "raw_response": "Random",
+      "seconds": 3.6537552499212325
+    },
+    {
+      "wafer_id": 810368,
+      "lot": "lot47497",
+      "actual": "Edge-Loc",
+      "image": "810368.png",
+      "vlm_prediction": "Near-full",
+      "raw_response": "Near-full",
+      "seconds": 3.815451375208795
+    }
+  ]
+}
